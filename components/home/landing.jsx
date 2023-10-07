@@ -2,6 +2,7 @@
 import Balancer from "react-wrap-balancer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Landing() {
   const variants = {
@@ -16,17 +17,8 @@ export default function Landing() {
   }
   return (
     <>
-      <div className="fixed top-0 left-0 w-full">
-        <Image
-          src="/wave.png"
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
 
-        />
-      </div>
-      <div className="z-10 w-full max-w-5xl px-5 xl:px-0 flex flex-row items-center">
+      <div id="about" className="z-10 w-full max-w-5xl my-10 px-5 xl:px-0 flex flex-row items-center">
         <motion.div variants={variants}
           animate={"jump"} className="w-1/3">
           <Image
@@ -55,11 +47,13 @@ export default function Landing() {
             </p>
             <motion.button
               className="flex animate-fade-up  justify-center items-center w-2/3 p-2 m-auto my-10 px-10 min-w-max text-sm text-center rounded-full backdrop-blur-sm transition-all md:text-base bg-blue-800/20 hover:bg-blue-800/80"
-              onClick={() => scrollToElement('element1')}
+
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" height="30" className="inline text-white">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
-              </svg>
+              <Link href="#timeline">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" height="30" className="inline text-white">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
+                </svg>
+              </Link>
             </motion.button>
 
           </div>

@@ -5,6 +5,7 @@ import cx from "classnames";
 import { outfit, roboto } from "./fonts";
 import Nav from "@/components/layout/nav";
 import { Suspense } from "react";
+import Image from "next/image";
 
 export const metadata = {
   title: "Aqua by ZHASA",
@@ -38,10 +39,11 @@ export default async function RootLayout({
   children,
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="!scroll-smooth">
       <Script id="safari-viewport-fix">{IOS_SAFARI_VIEWPORT_UNIT_CORRECTION}</Script>
       <body className={outfit.className + " " + roboto.className}>
         <div className="fixed h-screen w-full bg-white" />
+
         <Suspense fallback="...">
           <Nav />
         </Suspense>

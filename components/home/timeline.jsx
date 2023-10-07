@@ -1,15 +1,17 @@
+"use client";
 import Image from "next/image"
 export default function TimeLine() {
     return <>
-        <div className="z-10 w-full my-10 max-w-5xl px-5 xl:px-0 flex flex-row items-center">
-            <div>
-                <p className="text-7xl">
+        <div id="timeline" className="z-20  my-10 py-10 px-5 xl:px-0 ">
+            <div className="mx-auto px-auto">
+                <p className="text-8xl text-violet-950">
                     Did you know...
                 </p>
-                <p>
+                <p className="py-5">
                     that water is very important here you can see how blah blah blah
                 </p>
             </div>
-        </div>
+
+        </div >
     </>
 }

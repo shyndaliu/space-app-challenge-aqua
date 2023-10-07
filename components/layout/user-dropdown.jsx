@@ -9,14 +9,15 @@ import { Session } from "next-auth";
 import cx from 'classnames'
 import { useState } from "react";
 import Link from "next/link";
+import useScroll from "@/lib/hooks/use-scroll";
 
 export default function UserDropdown() {
-
+  const scrolled = useScroll(50);
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div>
-      <nav className={`w-full ${navbar ? ' backdrop-blur-xl ' : ' '} fixed top-0 left-0 right-0 z-10 md:bg-none`}>
+    <div id="top">
+      <nav className={`w-full ${navbar || scrolled ? ' backdrop-blur-md bg-violet-800/20 ' : ' '} fixed top-0 left-0 right-0 z-10 md:bg-none`}>
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -51,22 +52,22 @@ export default function UserDropdown() {
                 }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-violet-500 md:text-white  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:underline md:hover:bg-transparent">
-                  <Link href="#about" onClick={() => { setNavbar(!navbar) }}>
+                <li className="pb-6 text-xl text-white  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                  <Link href="#top" onClick={() => { setNavbar(!navbar) }}>
                     About
                   </Link>
                 </li>
-                <li className="pb-6 text-xl  text-violet-500 md:text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
                   <Link href="#timeline" onClick={() => setNavbar(!navbar)}>
                     Blogs
                   </Link>
                 </li>
-                <li className="pb-6 text-xl  text-violet-500 md:text-white  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     Contact
                   </Link>
                 </li>
-                <li className="pb-6 text-xl  text-violet-500 md:text-white  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
                   <Link href="#projects" onClick={() => setNavbar(!navbar)}>
                     Projects
                   </Link>
