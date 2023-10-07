@@ -2,14 +2,14 @@ import "./globals.css";
 import Script from 'next/script';
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
-import { sfPro, inter } from "./fonts";
+import { outfit, roboto } from "./fonts";
 import Nav from "@/components/layout/nav";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "My First Project",
+  title: "Aqua by ZHASA",
   description:
-    "Meet your AI Jeopardy expert.",
+    "We want to save the water!",
   themeColor: "#FFF",
 };
 
@@ -40,8 +40,8 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <Script id="safari-viewport-fix">{IOS_SAFARI_VIEWPORT_UNIT_CORRECTION}</Script>
-      <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100" />
+      <body className={outfit.className + " " + roboto.className}>
+        <div className="fixed h-screen w-full bg-white" />
         <Suspense fallback="...">
           <Nav />
         </Suspense>

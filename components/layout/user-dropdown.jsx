@@ -8,24 +8,17 @@ import { Menu, Transition } from '@headlessui/react'
 import { Session } from "next-auth";
 import cx from 'classnames'
 
-export default function UserDropdown({ session }) {
-  const { email, image } = session?.user || {};
-
-  if (!email) return null;
+export default function UserDropdown() {
 
   return (
     <div className="relative inline-block text-left">
       <Menu as="div" className="relative ml-3">
         <div>
-          <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+          <Menu.Button className="flex rounded-full text-sm focus:outline-none ">
             <span className="sr-only">Open user menu</span>
-            <Image
-              alt={email}
-              src={image || `https://avatars.dicebear.com/api/micah/${email}.svg`}
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
           </Menu.Button>
         </div>
         <Transition
@@ -42,7 +35,16 @@ export default function UserDropdown({ session }) {
               {({ active }) => (
                 <button
                   className={cx(active ? 'bg-gray-100' : '', 'relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-sm text-gray-700')}
-                  onClick={() => signOut()}
+                >
+                  <ArrowRightOnRectangleIcon className="h-4 w-4" />
+                  <p className="text-sm">Sign out</p>
+                </button>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <button
+                  className={cx(active ? 'bg-gray-100' : '', 'relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-sm text-gray-700')}
                 >
                   <ArrowRightOnRectangleIcon className="h-4 w-4" />
                   <p className="text-sm">Sign out</p>
