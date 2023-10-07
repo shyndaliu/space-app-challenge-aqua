@@ -52,24 +52,24 @@ export default function UserDropdown() {
                 }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white  py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white  py-3 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:underline md:hover:bg-transparent">
                   <Link href="#top" onClick={() => { setNavbar(!navbar) }}>
                     About
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                <li className="pb-6 text-xl text-white py-3 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
                   <Link href="#timeline" onClick={() => setNavbar(!navbar)}>
-                    Blogs
+                    Why?
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
+                <li className="pb-6 text-xl text-white  py-3 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                  <Link href="#globe" onClick={() => setNavbar(!navbar)}>
+                    The Globe
                   </Link>
                 </li>
-                <li className="pb-6 text-xl text-white  py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Projects
+                <li className="pb-6 text-xl text-white  py-3 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:underline md:hover:bg-transparent">
+                  <Link href="#test" onClick={() => setNavbar(!navbar)}>
+                    Test
                   </Link>
                 </li>
               </ul>

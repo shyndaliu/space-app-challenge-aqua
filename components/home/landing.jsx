@@ -45,16 +45,17 @@ export default function Landing() {
                 I am going to teach you why we need to save water and how to do it!
               </Balancer>
             </p>
-            <motion.button
-              className="flex animate-fade-up  justify-center items-center w-2/3 p-2 m-auto my-10 px-10 min-w-max text-sm text-center rounded-full backdrop-blur-sm transition-all md:text-base bg-blue-800/20 hover:bg-blue-800/80"
+            <Link href="#timeline">
+              <motion.button
+                className="flex animate-fade-up  justify-center items-center w-2/3 p-2 m-auto my-10 px-10 min-w-max text-sm text-center rounded-full backdrop-blur-sm transition-all md:text-base bg-blue-800/20 hover:bg-blue-800/80"
 
-            >
-              <Link href="#timeline">
+              >
+
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" height="30" className="inline text-white">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7"></path>
                 </svg>
-              </Link>
-            </motion.button>
+              </motion.button>
+            </Link>
 
           </div>
 

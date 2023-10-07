@@ -1,10 +1,14 @@
 'use client';
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/lib/authOptions";
 import Landing from "@/components/home/landing";
 import TimeLine from "@/components/home/timeline";
 import Image from "next/image";
-import ParallaxBody from "@/components/home/fullw";
+import ParallaxBody from "@/components/home/parallax-first";
+import ParallaxBg from "@/components/home/parallax-second";
+import Parallax from "@/components/home/parallax-third";
+import NasaVideo from "@/components/home/video";
+import Globe from "@/components/home/globe";
+import Footer from "@/components/home/footer";
+import Test from "@/components/home/test";
 
 export default async function Home() {
   //const session = await getServerSession(authOptions);
@@ -23,6 +27,12 @@ export default async function Home() {
       <Landing />
       <TimeLine />
       <ParallaxBody />
+      <ParallaxBg />
+      <Parallax />
+      <Globe />
+      <NasaVideo />
+      <Test />
+      <Footer />
     </>
   );
 }
