@@ -38,7 +38,7 @@ export default async function RootLayout({
   children,
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <Script id="safari-viewport-fix">{IOS_SAFARI_VIEWPORT_UNIT_CORRECTION}</Script>
       <body className={outfit.className + " " + roboto.className}>
         <div className="fixed h-screen w-full bg-white" />

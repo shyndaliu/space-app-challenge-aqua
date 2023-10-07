@@ -1,6 +1,5 @@
 'use client'
 import Balancer from "react-wrap-balancer";
-import { DEPLOY_URL } from "@/lib/constants";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -17,7 +16,7 @@ export default function Landing() {
   }
   return (
     <>
-      <div className="fixed top-0 left-0 w-{100%}">
+      <div className="fixed top-0 left-0 w-full">
         <Image
           src="/wave.png"
           width={0}
@@ -55,7 +54,7 @@ export default function Landing() {
               </Balancer>
             </p>
             <motion.button
-              className="flex justify-center items-center w-2/3 p-2 m-auto my-10 px-10 min-w-max text-sm text-center rounded-full backdrop-blur-sm transition-all md:text-base bg-blue-800/20 hover:bg-blur-blue/80"
+              className="flex animate-fade-up  justify-center items-center w-2/3 p-2 m-auto my-10 px-10 min-w-max text-sm text-center rounded-full backdrop-blur-sm transition-all md:text-base bg-blue-800/20 hover:bg-blue-800/80"
               onClick={() => scrollToElement('element1')}
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" height="30" className="inline text-white">

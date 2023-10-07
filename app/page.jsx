@@ -1,12 +1,19 @@
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/authOptions";
 import Landing from "@/components/home/landing";
-import Chat from "@/components/home/chat"
+import TimeLine from "@/components/home/timeline";
+import UserDropdown from "@/components/layout/user-dropdown";
 
 export default async function Home() {
-  const session = await getServerSession(authOptions);
-
+  //const session = await getServerSession(authOptions);
   return (
-    <Landing />
+    <>
+      <UserDropdown />
+      <div className="my-20">
+        <Landing id="about" />
+        <TimeLine id="timeline" />
+
+      </div>
+    </>
   );
 }
