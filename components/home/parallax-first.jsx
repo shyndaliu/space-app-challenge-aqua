@@ -1,6 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef } from "react";
-import { useEffect } from "react";
+import { useRef } from "react";
 
 export default function ParallaxBody() {
     const ref = useRef(null);
@@ -32,7 +31,7 @@ export default function ParallaxBody() {
                 <motion.h1
                     className="font-bold text-white text-3xl md:text-7xl pl-96 pb-48 z-5"
                 >
-                    Some facts from nasa..........
+                    Some facts from nasa..........!!
                 </motion.h1>
             </motion.div>
             <div
