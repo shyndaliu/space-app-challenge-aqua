@@ -16,3 +16,4 @@ export const outfitTitle = localFont({
   src: "./Outfit-Bold.ttf",
   variable: "--font-outfittitle",
 });
+//font problems
