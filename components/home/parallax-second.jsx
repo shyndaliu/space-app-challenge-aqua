@@ -22,36 +22,18 @@ export default function ParallaxBg() {
             ref={ref}
             className="w-full  bg-gray-700  h-screen overflow-hidden  relative grid place-items-center"
         >
-            <div className="max-w-lg space-y-4 mx-auto py-24 text-neutral-300 z-20">
+            <div className="bg-gray-950/40  backdrop-blur-md max-w-lg space-y-4 px-10 py-6 mx-auto rounded-xl text-white z-20">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae
-                    earum nobis quasi repellat. Amet facere nulla dolorum accusantium
-                    sit dolores odio excepturi facilis laboriosam officiis dolorem,
-                    nobis reprehenderit molestiae.
+                    NASA scientists have extensively studied the critical role that water plays in regulating Earth's climate. The planet's water cycle, also known as the hydrological cycle, involves the continuous movement of water between the atmosphere, land, and oceans. This cycle plays a pivotal role in maintaining the Earth's temperature and climate stability.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae
-                    earum nobis quasi repellat. Amet facere nulla dolorum accusantium
-                    sit dolores odio excepturi facilis laboriosam officiis dolorem,
-                    nobis reprehenderit molestiae.
+                    Water acts as a natural thermostat for our planet. When water evaporates from the Earth's surface, it absorbs heat, cooling the environment. This cooling effect helps regulate temperature extremes, preventing our planet from becoming too hot or too cold to support life.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae
-                    earum nobis quasi repellat. Amet facere nulla dolorum accusantium
-                    sit dolores odio excepturi facilis laboriosam officiis dolorem,
-                    nobis reprehenderit molestiae.
+                    Additionally, water vapor in the atmosphere acts as a greenhouse gas, trapping some heat and contributing to the natural greenhouse effect that keeps our planet warm enough to support life. NASA's research on Earth's climate and the water cycle is crucial for understanding climate change and its impacts, which have far-reaching consequences for ecosystems and societies worldwide.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae
-                    earum nobis quasi repellat. Amet facere nulla dolorum accusantium
-                    sit dolores odio excepturi facilis laboriosam officiis dolorem,
-                    nobis reprehenderit molestiae.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quae
-                    earum nobis quasi repellat. Amet facere nulla dolorum accusantium
-                    sit dolores odio excepturi facilis laboriosam officiis dolorem,
-                    nobis reprehenderit molestiae.
+                    In summary, water's role in regulating Earth's climate is a testament to its importance as a life-sustaining and climate-stabilizing element on our planet. NASA's ongoing research continues to deepen our understanding of this critical relationship.
                 </p>
             </div>
             <motion.div style={{ y: image1Y }}

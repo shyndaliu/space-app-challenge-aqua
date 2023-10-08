@@ -25,8 +25,8 @@ export default function ParallaxBody() {
         }}
       />
       <motion.div style={{ y: textY }}>
-        <motion.h1 className="z-5 pb-48 pl-96 text-3xl font-bold text-white md:text-7xl">
-          Some facts from nasa..........
+        <motion.h1 className="z-5 pb-48 pl-96 text-3xl font-bold text-white md:text-6xl">
+          ...Earth's Water is Older Than the Sun
         </motion.h1>
       </motion.div>
       <div

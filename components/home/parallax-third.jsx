@@ -22,8 +22,8 @@ export default function Parallax() {
             ref={ref}
             className="w-full  h-screen overflow-hidden  relative grid place-items-center"
         >
-            <h1 className="absolute left-1/4 text-3xl text-gray-700">
-                Some text.....
+            <h1 className="absolute left-48 text-3xl text-gray-700">
+                Conserve water, conserve life.
             </h1>
             <motion.div style={{ y: image3Y }}
                 className="absolute top-12 z-5"

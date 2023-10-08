@@ -42,7 +42,7 @@ export default function Landing() {
               style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
             >
               <Balancer>
-                I am going to teach you why we need to save water and how to do it!
+                I am your underwater guide to a world of watery wonders. Welcome to our exciting educational website all about the amazing element that makes life on Earth possible—water! 🌊
               </Balancer>
             </p>
             <Link href="#timeline">

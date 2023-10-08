@@ -89,11 +89,15 @@ export default function Test() {
   };
 
   return (
-    <div className="relative z-20 h-screen w-full bg-gray-700 px-5 py-10">
-      <div className="absolute left-1/4 right-1/4">
-        <h1 className="mx-auto pt-5 text-4xl font-semibold text-[#19D5EF]">
-          Water Sources Quiz
+    <div className="relative z-20 flex justify-center  w-full bg-gray-700 px-5 py-10">
+      <div className="px-auto ">
+        <h1 className="mx-auto pt-5 text-6xl font-semibold text-[#19D5EF]">
+          Water Wonders Quiz
         </h1>
+        <p className="mx-auto pt-5  text-xl font-semibold text-white">
+          This fun and educational quiz will test your knowledge about the fascinating world of water!
+        </p>
+
 
         {/* Render the questions and options */}
         {questions.map((q, index) => (

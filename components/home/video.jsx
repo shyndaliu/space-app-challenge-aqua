@@ -10,7 +10,7 @@ export default function NasaVideo() {
             Let's watch some video...
           </p>
           <p className="py-5">
-            that water is very important here you can see how blah blah blah
+            Get ready for an out-of-this-world adventure as we journey with NASA to explore the wonders of water in our universe. Buckle up, young explorers, and let's watch the video to unlock the mysteries of water beyond our blue planet!
           </p>
           <iframe
             width="560"
